@@ -1,0 +1,236 @@
+.page_expo-menu, .page_oeuv-menu {
+  display: inline-block;
+  width: 100%;
+}
+
+button {
+  /* border: 2px solid rgba(3,3,3,0.69); */
+  background-color : #808080b3;
+  opacity: 0.8;
+  box-shadow: 1px 1px 50px #000;
+  font-size: 120%;
+  color: white;
+}
+
+button:hover {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.expo_menu-print {
+  width: 32%;
+  float: left;
+  text-align: center;
+  padding-left: 2%;
+}
+
+.oeuv_menu-print {
+  width: 32%;
+  float: left;
+  text-align: center;
+  padding-left: 2%;
+}
+
+#cprint {
+  width: 50%;
+  padding: 7%;
+}
+
+#print {
+  background: white;
+  opacity: 0.7;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  /* outline: 1px solid white; */
+}
+
+/* .print_img {
+  width: 90%;
+  margin: 0 auto;
+  outline : 1px solid yellow;
+  border: 1px solid black;
+} */
+
+.img {
+  width: 100%;
+  height: 480px;
+  margin: 0 auto;
+  display: inline-flex;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.img-log-code {
+  float: left;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+  width: 22%;
+}
+
+.Loging, .code {
+  width: 100%;
+}
+
+.code-img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.Logimg img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.photo {
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 72%;
+}
+
+.photo img {
+  float: right;
+  width: 90%;
+  height: 90%;
+}
+
+.imgprint{
+  width: 60%;
+  height: 60%;
+}
+
+.imgexp {
+  margin: 0 auto;
+  /* outline: 2px solid black; */
+  height: 280px;
+  width: 280px;
+}
+
+.imgprint2{
+  width: 100%;
+  height: 100%;
+}
+
+.titre-oeuv {
+  margin: 0 auto;
+  border : 2px double black;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.Titre {
+  font-size: 160%;
+  text-align: center;
+}
+
+.date, .exposition {
+  font-size: 120%;
+  text-align: center;
+}
+
+.info-oeuv {
+  width: 100%;
+  display : inline-flex;
+}
+
+.oeuv-info, .oeuv-art {
+  font-size: 120%;
+  float: left;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  padding: 1%;
+  width: 46%;
+  text-align: justify;
+  border : 2px double black;
+}
+
+.print_descript {
+  font-size: 102%;
+  margin-top: 4%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  text-align: justify;
+  border: 1px double black;
+}
+
+.print_desc {
+  font-size: 120%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-buttom: 2%;
+  padding: 1% 1%;
+  text-align: justify;
+  border: 2px double black;
+}
+
+.print_exp {
+  padding-top: 1%;
+}
+
+
+@media print {
+  body {
+  width: auto;
+  margin: auto;
+  /* font-family: serif; */
+  font-size: 11pt;
+  opacity: 1;
+  background-color: #fff;
+  color: #000;
+  border: 2px dotted black;
+  z-index: 2;
+  }
+
+  #print {
+    opacity: 1;
+  }
+
+  header {
+    display: none;
+  }
+
+  .Logo {
+    display: none;
+  }
+
+  .page_expo-menu, .page_oeuv-menu {
+    display: none;
+  }
+
+  p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+    color: #000!important;
+    margin: auto!important;
+  }
+
+  /* affichage des éléments de classe print */
+  /* .print {
+    display: block;
+  } */
+
+  p, blockquote {
+    orphans: 3; /* pas de ligne seule en bas */
+    widows: 3; /* pas de ligne seule en haut */
+  }
+
+  blockquote, ul, ol {
+    page-break-inside: avoid; /* pas de coupure dans ces élements */
+  }
+
+  h1 {
+    page-break-before: always; /* chaque titre commence sur une nouvelle page */
+  }
+
+  h1, h2, h3, caption {
+    page-break-after: avoid; /* pas de saut après ces éléments */
+  }
+
+}

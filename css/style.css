@@ -1,0 +1,139 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.navbar-toggler {
+  outline: 1px solid black;
+}
+.presentationGrandAngle {
+  padding-top: 20px;
+}
+.expositionDuMoment {
+  padding-bottom: 20px;
+}
+.planningExposition {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 400px) {
+  .table-sm td {
+    font-size: 13px;
+  }
+}
+.navbar {
+  border-bottom: 2px solid #ec4c4c;
+}
+th {
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid black;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid black;
+}
+.dropdown-item {
+  padding: 5px;
+}
+.width100 {
+  width: 100%;
+}
+.textOnMiddle {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.descriptionExposition {
+  margin: 15px 0;
+}
+footer {
+  margin-top: 20px;
+}
+@media screen and (max-width: 400px) {
+  .d-block {
+    height: 300px;
+    object-fit: contain;
+    padding: 8px 0;
+  }
+}
+@media screen and (min-width: 401px) {
+  .d-block {
+    height: 400px;
+    object-fit: contain;
+    padding: 8px 0;
+  }
+}
+@media (max-width: 340px){
+  .dropdown-item {
+    white-space: normal;
+    width: 285px;
+  }
+}
+@media (min-width: 341px){
+  .dropdown-item {
+    white-space: normal;
+    width: 320px;
+  }
+}
+.flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+}
+.img_flag {
+  width: 100%;
+  padding: 5px;
+}
+@media (min-width: 760px){
+  .img_flag {
+    width: 80%;
+  }
+}
+@media (min-width: 760px){
+  .flag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+.welcome {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcomeText {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.fontSize20Bold {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+.fontSize15 {
+  font-size: 15px;
+}
+.breadcrumbs {
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 13px;
+}
+.paddingBotTop {
+  padding: 10px 0;
+}
+.descriptionOeuvre {
+  padding: 10px 0;
+}
+.espace {
+  padding: 12px 0;
+}
